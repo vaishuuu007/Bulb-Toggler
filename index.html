@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bulb toggling</title>
+    <style>
+        body{
+background-color: #7ee1f3;
+background-image: linear-gradient(101deg, #f8bdd6 0%, #f7a9a9 100%);
+        }
+        .app-title{
+            text-align: center;
+            font-size: 60px;
+        }
+        .main-container{
+            background-color: white;
+            width: 400px;
+             height: 400px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+          box-shadow:0 0  5px 0 rgba(0 , 0, 0, 0.6);
+
+        }
+        
+        .bulb-img{
+            size: 10px;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-toggle{
+            font-size: 35px;
+            padding: 5px 23px;
+            border-radius: 40px;
+            border: none;
+            margin:25px 29px;
+            cursor: pointer;
+            color: #000;
+
+
+        }
+        .btn-toggle:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-on{
+            background-color:rgb(254, 90, 117);
+        }
+        .btn-off{
+            background-color:rgb(254, 90, 117);
+        }
+        
+        @media screen and (max-width:660px){  
+        .main-container {
+            width: 90%;
+        } 
+
+        .bulb-img{
+            height: 150px;
+        }
+    }
+
+    </style>
+        
+</head>
+<body>
+    <h1 class="app-title">Bulb Toggler</h1>
+    <div class="main-container">
+    <img src="C:\Users\shahaji waditke\Desktop\bulb-toggler\images\one.png" class="bulb-img" id="dark"/>
+   </div>
+    <div class="btn-container">
+    <button class="btn-toggle btn-on" onclick="turnOn()">
+        On</button>
+    <button class="btn-toggle btn-off" onclick="turnOff()">
+        Off</button>
+        
+    </div>
+    <script>
+  function turnOn(){
+    const darkElement = document.getElementById('dark')
+    darkElement.src="C:\Users\shahaji waditke\Desktop\bulb-toggler\two.png";
+  }
+  function turnOff(){
+      const lightElement = document.getElementById('dark');
+      lightElement.src = "C:\Users\shahaji waditke\Desktop\bulb-toggler\one.png";
+  }
+  
+    </script>
+</body>
+</html>
