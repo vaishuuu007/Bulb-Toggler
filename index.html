@@ -76,9 +76,9 @@
 </head>
 
 <body>
-    <h1 class="app-title">Bulb Toggler</h1>
+    <h1 class="app-title">_Bulb Toggler_</h1>
     <div class="main-container">
-        <img src="../bulb-toggler/off.png" alt="off" id="bulb" class="bulb-img" />
+        <img src="./images/off.png" alt="off" id="bulb" class="bulb-img" />
     </div>
     <div class="btn-container">
         <button type="button" class="btn-toggle btn-on" onclick="toggleBulb()">
@@ -92,12 +92,12 @@
         function toggleBulb(){
             if(state == false)
             {
-            bulbElement.src ="../bulb-toggler/on.png";
+            bulbElement.src ="./images/on.png";
             state = true;
         }
         else
         {
-            bulbElement.src ="../bulb-toggler/off.png";
+            bulbElement.src ="./images/off.png";
             state = false;
         }
         }
